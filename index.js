@@ -10,7 +10,8 @@ app.get('/',(req,res)=>{
 })
 app.get('/main',(req,res)=>{
 
-    res.render(__dirname + "/public/index.html")
+    var name = "Prince";
+    res.render(__dirname + "/public/index.html",{name:name})
 })
 app.listen(port, ()=>{
 
